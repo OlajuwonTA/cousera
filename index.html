@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Coursera Navbar + Course Card</title>
+  </head>
+  <body>
+    <nav class="top-nav">
+      <div class="logo">Coursera</div>
+      <ul class="nav-links">
+        <li><a href="#">Explore</a></li>
+        <li><a href="#">My Learning</a></li>
+        <li><a href="#">Certificates</a></li>
+        <li><a href="#">Career</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="login-btn">Log In</button>
+        <button class="signup-btn">Join for Free</button>
+      </div>
+    </nav>
+
+    <main>
+      <div class="fill-up">
+        <h3 class="fil">Filter By</h3>
+        <h3 class="allresults">All results</h3>
+      </div>
+
+      <div class="all">
+        <button class="sort">Filters</button>
+        <button class="sort">Sort by:</button>
+      </div>
+      <div class="overall">
+        <div class="filter-section">
+          <!-- Subject Filter -->
+          <div class="filter-group">
+            <h3>Subject</h3>
+            <div class="filter-option">
+              <input type="checkbox" id="business" />
+              <label for="business"
+                >Business <span class="count">(4,139)</span></label
+              >
+            </div>
+            <div class="filter-option">
+              <input type="checkbox" id="cs" />
+              <label for="cs"
+                >Computer Science <span class="count">(3,414)</span></label
+              >
+            </div>
+            <div class="filter-option">
+              <input type="checkbox" id="it" />
+              <label for="it"
+                >Information Technology
+                <span class="count">(2,604)</span></label
+              >
+            </div>
+            <div class="filter-option">
+              <input type="checkbox" id="ds" />
+              <label for="ds"
+                >Data Science <span class="count">(1,906)</span></label
+              >
+            </div>
+            <span class="show-more">Show more</span>
+          </div>
+
+          <!-- Language Filter -->
+          <div class="filter-group">
+            <h3>
+              Language
+              <span class="info-icon" title="Select the course language"
+                >ℹ️</span
+              >
+            </h3>
+            <div class="filter-option">
+              <input type="checkbox" id="english" />
+              <label for="english"
+                >English <span class="count">(12,601)</span></label
+              >
+            </div>
+            <div class="filter-option">
+              <input type="checkbox" id="spanish" />
+              <label for="spanish"
+                >Spanish <span class="count">(6,537)</span></label
+              >
+            </div>
+            <div class="filter-option">
+              <input type="checkbox" id="french" />
+              <label for="french"
+                >French <span class="count">(5,503)</span></label
+              >
+            </div>
+            <div class="filter-option">
+              <input type="checkbox" id="arabic" />
+              <label for="arabic"
+                >Arabic <span class="count">(5,432)</span></label
+              >
+            </div>
+            <span class="show-more">Show more</span>
+          </div>
+          <!--Level Filter -->
+          <div class="filter-group">
+            <h3>Level</h3>
+            <div class="filter-option">
+              <input type="checkbox" id="Beginner" />
+              <label for="Beginner"
+                >Beginner <span class="count">(8,910)</span></label
+              >
+            </div>
+            <div class="filter-option">
+              <input type="checkbox" id="Intermediate" />
+              <label for="Intermediate"
+                >Intermediate <span class="count">(5,290)</span></label
+              >
+            </div>
+            <div class="filter-option">
+              <input type="checkbox" id="Advanced" />
+              <label for="Advanced"
+                >Advanced <span class="count">(599)</span></label
+              >
+            </div>
+            <div class="filter-option">
+              <input type="checkbox" id="Arabic" />
+              <label for="Arabic"
+                >Arabic <span class="count">(5,432)</span></label
+              >
+            </div>
+            <span class="show-more">Show more</span>
+          </div>
+
+          <!--learning product-->
+          <div class="filter-group">
+            <h3>Learning Product</h3>
+            <div class="filter-option">
+              <input type="checkbox" id="Guided Projects" />
+              <label for="Guided Projects"
+                >Guided Projects <span class="count">(1,615)</span></label
+              >
+            </div>
+            <div class="filter-option">
+              <input type="checkbox" id="Courses" />
+              <label for="Courses"
+                >Courses<span class="count">(12,323)</span></label
+              >
+            </div>
+            <div class="filter-option">
+              <input type="checkbox" id="Projects" />
+              <label for="Projects"
+                >Projects <span class="count">(576)</span></label
+              >
+            </div>
+            <div class="filter-option">
+              <input type="checkbox" id="Specializations" />
+              <label for="Specializations"
+                >Specializations <span class="count">(1,561)</span></label
+              >
+            </div>
+            <!-- <span class="show-more">Show more</span> -->
+            <div class="filter-option">
+              <input type="checkbox" id="Professional Certificates" />
+              <label for="Professional Certificates"
+                >Professional Certificates
+                <span class="count">(211)</span></label
+              >
+            </div>
+
+            <div class="filter-option">
+              <input type="checkbox" id="MasterTrack® Certificates" />
+              <label for="MasterTrack® Certificates"
+                >MasterTrack® Certificates
+                <span class="count">(13)</span></label
+              >
+            </div>
+
+            <div class="filter-option">
+              <input type="checkbox" id="Degrees" />
+              <label for="Degrees"
+                >Degrees <span class="count">(55)</span></label
+              >
+            </div>
+
+            <div class="filter-option">
+              <input type="checkbox" id="Postgraduate Diploma" />
+              <label for="Postgraduate Diploma"
+                >Postgraduate Diploma <span class="count">(1)</span></label
+              >
+            </div>
+
+            <div class="filter-option">
+              <input type="checkbox" id="Graduate Certificates" />
+              <label for="Graduate Certificates"
+                >Graduate Certificates <span class="count">(20)</span></label
+              >
+            </div>
+
+            <div class="filter-option">
+              <input type="checkbox" id="University Certificates" />
+              <label for="University Certificates"
+                >University Certificates <span class="count">(5)</span></label
+              >
+            </div>
+          </div>
+
+          <!--Duration -->
+          <div class="filter-group">
+            <h3>Duration</h3>
+            <div class="filter-option">
+              <input type="checkbox" id="Less Than 2 Hours" />
+              <label for="Less Than 2 Hours"
+                >Less Than 2 Hours <span class="count">(2,191)</span></label
+              >
+            </div>
+            <div class="filter-option">
+              <input type="checkbox" id="1-4 Weeks" />
+              <label for="1-4 Weeks"
+                >1-4 Weeks <span class="count">(6,768)</span></label
+              >
+            </div>
+            <div class="filter-option">
+              <input type="checkbox" id="1-3 Months" />
+              <label for="1-3 Months"
+                >1-3 Months <span class="count">(5,808)</span></label
+              >
+            </div>
+            <div class="filter-option">
+              <input type="checkbox" id="3-6 Months" />
+              <label for="3-6 Months"
+                >3-6 Months <span class="count">(1,504)</span></label
+              >
+            </div>
+            <!-- <span class="show-more">Show more</span> -->
+
+            <div class="filter-option">
+              <input type="checkbox" id="6-12 Months" />
+              <label for="6-12 Months"
+                >6-12 Months <span class="count">(39)</span></label
+              >
+            </div>
+
+            <div class="filter-option">
+              <input type="checkbox" id="1-4 Years" />
+              <label for="1-4 Years"
+                >1-4 Years <span class="count">(55)</span></label
+              >
+            </div>
+          </div>
+
+          <!-- Skills -->
+
+          <div class="filter-group">
+            <h3>Skills</h3>
+            <div class="filter-option">
+              <input type="checkbox" id="Data Analysis" />
+              <label for="Data Analysis"
+                >Data Analysis <span class="count">(1,364)</span></label
+              >
+            </div>
+            <div class="filter-option">
+              <input type="checkbox" id="Google Cloud Platform" />
+              <label for="Google Cloud Platform"
+                >Google Cloud Platform <span class="count">(1,284)</span></label
+              >
+            </div>
+            <div class="filter-option">
+              <input type="checkbox" id="Generative AI" />
+              <label for="Generative AI"
+                >Generative AI <span class="count">(1,279)</span></label
+              >
+            </div>
+            <div class="filter-option">
+              <input type="checkbox" id="Artificial Intelligence" />
+              <label for="Artificial Intelligence"
+                >Artificial Intelligence
+                <span class="count">(1,117)</span></label
+              >
+            </div>
+            <span class="show-more">Show more</span>
+          </div>
+
+          <!-- Subtitles -->
+          <div class="filter-group">
+            <h3>Subtitles</h3>
+            <div class="filter-option">
+              <input type="checkbox" id="English" />
+              <label for="English"
+                >English <span class="count">(13,844)</span></label
+              >
+            </div>
+            <div class="filter-option">
+              <input type="checkbox" id="Spanish" />
+              <label for="Spanish"
+                >Spanish <span class="count">(7,106)</span></label
+              >
+            </div>
+            <div class="filter-option">
+              <input type="checkbox" id="French" />
+              <label for="French"
+                >French <span class="count">(6,063)</span></label
+              >
+            </div>
+            <div class="filter-option">
+              <input type="checkbox" id="Arabic" />
+              <label for="Arabic"
+                >Arabic <span class="count">(5,906)</span></label
+              >
+            </div>
+            <span class="show-more">Show more</span>
+          </div>
+
+          <!-- Educator -->
+          <div class="filter-group">
+            <h3>Educator</h3>
+            <div class="filter-option">
+              <input type="checkbox" id="Google Cloud" />
+              <label for="Google Cloud"
+                >Google Cloud <span class="count">(1,630)</span></label
+              >
+            </div>
+            <div class="filter-option">
+              <input type="checkbox" id="Coursera Project Network" />
+              <label for="Coursera Project Network"
+                >Coursera Project Network
+                <span class="count">(1,608)</span></label
+              >
+            </div>
+            <div class="filter-option">
+              <input type="checkbox" id="Packt" />
+              <label for="Packt">Packt <span class="count">(904)</span></label>
+            </div>
+            <div class="filter-option">
+              <input type="checkbox" id="University of Colorado Boulder" />
+              <label for="University of Colorado Boulder"
+                >University of Colorado Boulder
+                <span class="count">(509)</span></label
+              >
+            </div>
+            <span class="show-more">Show more</span>
+          </div>
+        </div>
+        <article class="parent">
+          <div class="father">
+            <section>
+              <div class="course-card">
+                <div class="card-tags">
+                  <span class="tag">Free Trial</span>
+                  <span class="tag ai-tag"> AI skills</span>
+                </div>
+                <img src="images\Adobe Express - file (1).jpg" class="new" />
+                <div class="card-header">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg"
+                    alt="Google Logo"
+                    class="logo"
+                  />
+                </div>
+                <h2 class="course-title">Google Data Analytics</h2>
+                <p class="skills">
+                  <strong>Skills you'll gain:</strong> Data Storytelling,
+                  Rmarkdown, Data Literacy, Data Visualization, Data
+                  Presentation, Data Ethics, Data Cleansing, Interactive Data
+                  Visualization, Data...
+                </p>
+                <a href="#" class="degree-link">Build toward a degree</a>
+                <div class="rating"><strong>4.8</strong> · 170K reviews</div>
+                <div class="level">
+                  Beginner · Professional Certificate · 3 - 6 Months
+                </div>
+                <img
+                  class="instructor"
+                  src="images\high-angle-smiley-woman-with-map (1).jpg"
+                  alt="Instructor"
+                />
+              </div>
+            </section>
+
+            <section>
+              <div class="course-card">
+                <div class="card-tags">
+                  <span class="tag">Free Trial</span>
+                  <span class="tag ai-tag"> AI skills</span>
+                </div>
+                <img src="images\Adobe Express - file (2).jpg" class="new" />
+                <div class="card-header">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg"
+                    alt="Google Logo"
+                    class="logo"
+                  />
+                </div>
+                <h2 class="course-title">Google Cybersecurity</h2>
+                <p class="skills">
+                  <strong>Skills you'll gain:</strong> Threat Modelling, Network
+                  Security, Incident Response, Vulnerability Management,
+                  Computer Security Incident Management, Harding, Intrusion
+                  Detection and Prevention, Cyber...
+                </p>
+                <a href="#" class="degree-link">Build toward a degree</a>
+                <div class="rating"><strong>4.8</strong> · 53K reviews</div>
+                <div class="level">
+                  Beginner · Professional Certificate · 3 - 6 Months
+                </div>
+                <img
+                  class="instructor"
+                  src="images\front-view-man-doing-presentation-meeting.jpg"
+                  alt="Instructor"
+                />
+              </div>
+            </section>
+          </div>
+
+          <div class="father">
+            <section>
+              <div class="course-card">
+                <div class="card-tags">
+                  <span class="tag">Free Trial</span>
+                  <span class="tag ai-tag"> AI skills</span>
+                </div>
+                <img src="images\Adobe Express - file (8).jpg" class="new" />
+                <div class="card-header">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg"
+                    alt="Google Logo"
+                    class="logo"
+                  />
+                </div>
+                <h2 class="course-title">Google Project Management</h2>
+                <p class="skills">
+                  <strong>Skills you'll gain:</strong> Quanlity
+                  Management,Project Management Life Cycle, Requirements
+                  Analysis, Project Scoping, Project Closure, Project Closure,
+                  Project Management, Project Planning, Agile Project
+                  Management, Contino...
+                </p>
+                <a href="#" class="degree-link">Build toward a degree</a>
+                <div class="rating"><strong>4.8</strong> · 131K reviews</div>
+                <div class="level">
+                  Beginner · Professional Certificate · 3 - 6 Months
+                </div>
+                <img
+                  class="instructor"
+                  src="images\afro-american-woman-model-studio.jpg"
+                  alt="Instructor"
+                />
+              </div>
+            </section>
+
+            <section>
+              <div class="course-card">
+                <div class="card-tags">
+                  <span class="tag">Free Trial</span>
+                  <span class="tag ai-tag"> AI skills</span>
+                </div>
+                <img src="images\Adobe Express - file (6).jpg" class="new" />
+                <div class="card-header">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg"
+                    alt="Google Logo"
+                    class="logo"
+                  />
+                </div>
+                <h2 class="course-title">Google AI Essentials</h2>
+                <p class="skills">
+                  <strong>Skills you'll gain:</strong> Prompt
+                  Engeneering,Generative AI, Artificial Intelligence and Machine
+                  Learning(AI/ML), Large Language Modeling, Process
+                  Optimazation, Productivity Software, Workforce Development...
+                </p>
+                <a href="#" class="degree-link">Build toward a degree</a>
+                <div class="rating"><strong>4.8</strong> · 3K reviews</div>
+                <div class="level">Beginner ·Specialization · 1 - 3 Months</div>
+                <img
+                  class="instructor"
+                  src="images\medium-shot-beautiful-woman-with-braids (1).jpg"
+                  alt="Instructor"
+                />
+              </div>
+            </section>
+          </div>
+
+          <div class="father">
+            <section>
+              <div class="course-card">
+                <div class="card-tags">
+                  <span class="tag">Free Trial</span>
+                  <span class="tag ai-tag"> AI skills</span>
+                </div>
+                <img src="images\Adobe Express - file (9).jpg" class="new" />
+                <div class="card-header">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg"
+                    alt="Google Logo"
+                    class="logo"
+                  />
+                </div>
+                <h2 class="course-title">
+                  Google Digital Marketing & E-commerce
+                </h2>
+                <p class="skills">
+                  <strong>Skills you'll gain:</strong> Data Storytelling,Search
+                  Engine Marketing, Media Planning,Social Media Marketing,
+                  Google Ads, Email Marketing, Social Media Strategy, Search
+                  Engine Optimization, Order Fulfillment, Social...
+                </p>
+                <a href="#" class="degree-link">Build toward a degree</a>
+                <div class="rating"><strong>4.8</strong> · 41K reviews</div>
+                <div class="level">
+                  Beginner ·Professional Certificate · 3 - 6 Months
+                </div>
+                <img
+                  class="instructor"
+                  src="images\concerned-male-teacher-wearing-glasses-writes-something-paper-sitting-table-with-school-tools-classroom (1).jpg"
+                  alt="Instructor"
+                />
+              </div>
+            </section>
+
+            <section>
+              <div class="course-card">
+                <div class="card-tags">
+                  <span class="tag">Free Trial</span>
+                  <span class="tag ai-tag"> AI skills</span>
+                </div>
+                <img src="images\Adobe Express - file (10).jpg" class="new" />
+                <div class="card-header">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg"
+                    alt="Google Logo"
+                    class="logo"
+                  />
+                </div>
+                <h2 class="course-title">Google IT Support</h2>
+                <p class="skills">
+                  <strong>Skills you'll gain:</strong> Computer Networking,
+                  Package and Software Management, Network Troubleshooting,
+                  System Administration, Cloud Infrastructure, IT
+                  Infrastructure, Information System Security, TCP/IP,...
+                </p>
+                <a href="#" class="degree-link">Build toward a degree</a>
+                <div class="rating"><strong>4.8</strong> ·204K reviews</div>
+                <div class="level">
+                  Beginner ·Professional Certificate · 3 - 6 Months
+                </div>
+                <img
+                  class="instructor"
+                  src="images\side-view-smiley-woman-pressing-buzzer (1).jpg"
+                  alt="Instructor"
+                />
+              </div>
+            </section>
+          </div>
+
+          <div class="father">
+            <section>
+              <div class="course-card">
+                <div class="card-tags">
+                  <span class="tag">Free Trial</span>
+                  <span class="tag ai-tag"> AI skills</span>
+                </div>
+                <img src="images\Adobe Express - file (11).jpg" class="new" />
+                <div class="card-header">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg"
+                    alt="Google Logo"
+                    class="logo"
+                  />
+                </div>
+                <h2 class="course-title">Google UX Design</h2>
+                <p class="skills">
+                  <strong>Skills you'll gain:</strong>Responsive Web Design,
+                  Storyboarding, Wireframing, User Experience Design, UI/UX
+                  Research, Usability Testing, Information Architecture,
+                  Presentations, User Research, Figma(Design Software),...
+                </p>
+                <a href="#" class="degree-link">Build toward a degree</a>
+                <div class="rating"><strong>4.8</strong> ·92K reviews</div>
+                <div class="level">
+                  Beginner ·Professional Certificate · 3 - 6 Months
+                </div>
+                <img
+                  class="instructor"
+                  src="images\beautiful-young-dark-skinned-curly-brunette-woman-white-blouse-looks-front-leans-table-designs-stylish-clothes (1).jpg"
+                  alt="Instructor"
+                />
+              </div>
+            </section>
+
+            <section>
+              <div class="course-card">
+                <div class="card-tags">
+                  <span class="tag">Free Trial</span>
+                  <span class="tag ai-tag"> AI skills</span>
+                </div>
+                <img src="images\Adobe Express - file (12).jpg" class="new" />
+                <div class="card-header">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg"
+                    alt="Google Logo"
+                    class="logo"
+                  />
+                </div>
+                <h2 class="course-title">Google Advanced Data Analytics</h2>
+                <p class="skills">
+                  <strong>Skills you'll gain:</strong>Data Storytelling, Data
+                  Visualization, Data Ethics, Exploratory Data Analysis,
+                  Sampling(Statistics), Data Presentation, Data Visualization
+                  Software, Feature Engineering, Regression Analysis,...
+                </p>
+                <a href="#" class="degree-link">Build toward a degree</a>
+                <div class="rating"><strong>4.8</strong> ·7K reviews</div>
+                <div class="level">
+                  Beginner ·Professional Certificate · 3 - 6 Months
+                </div>
+                <img
+                  class="instructor"
+                  src="images\smiley-fashionable-woman-model-posing-outside (1).jpg"
+                  alt="Instructor"
+                />
+              </div>
+            </section>
+          </div>
+        </article>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-column">
+          <h3>Coursera</h3>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">What We Offer</a></li>
+            <li><a href="#">Leadership</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Catalog</a></li>
+            <li><a href="#">Coursera Plus</a></li>
+            <li><a href="#">Professional Certificates</a></li>
+            <li><a href="#">MasterTrack® Certificates</a></li>
+            <li><a href="#">Degrees</a></li>
+            <li><a href="#">For Enterprise</a></li>
+            <li><a href="#">For Government</a></li>
+            <li><a href="#">For Campus</a></li>
+            <li><a href="#">Become a Partner</a></li>
+            <li><a href="#">Social Impact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Community</h3>
+          <ul>
+            <li><a href="#">Learners</a></li>
+            <li><a href="#">Partners</a></li>
+            <li><a href="#">Beta Testers</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">The Coursera Podcast</a></li>
+            <li><a href="#">Tech Blog</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>More</h3>
+          <ul>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Investors</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Accessibility</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Articles</a></li>
+            <li><a href="#">Directory</a></li>
+            <li><a href="#">Affiliates</a></li>
+            <li><a href="#">Modern Slavery Statement</a></li>
+            <li><a href="#">Manage Cookie Preferences</a></li>
+          </ul>
+        </div>
+
+        <!-- <div class="footer-column app-column">
+          <h3>Mobile App</h3>
+          <a href="#"><img src="appstore.png" alt="App Store" /></a>
+          <a href="#"><img src="googleplay.png" alt="Google Play" /></a>
+          <img src="certified-b.png" alt="Certified B Corporation" />
+        </div>
+      </div> -->
+
+      <!-- <div class="footer-bottom"> -->
+        <p>© 2025 Coursera Inc. All rights reserved.</p>
+        <!-- <div class="social-icons">
+          <a href="#"><img src="facebook.png" alt="Facebook" /></a>
+          <a href="#"><img src="linkedin.png" alt="LinkedIn" /></a>
+          <a href="#"><img src="twitter.png" alt="Twitter" /></a>
+          <a href="#"><img src="youtube.png" alt="YouTube" /></a>
+          <a href="#"><img src="help.png" alt="Help" /></a>
+        </div>
+      </div> -->
+    </footer>
+
+    <!-- 
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+    });
+  </script> -->
+  </body>
+</html>
