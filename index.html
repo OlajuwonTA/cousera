@@ -28,11 +28,317 @@
       </div>
 
       <div class="all">
-        <button class="sort">Filters</button>
+        <button id="sort-btn" class="sort">Filters</button>
         <button class="sort">Sort by:</button>
       </div>
       <div class="overall">
         <div class="filter-section">
+          <!-- Subject Filter -->
+          <div class="filter-group">
+            <h3>Subject</h3>
+            <div class="filter-option">
+              <input type="checkbox" id="business" />
+              <label for="business"
+                >Business <span class="count">(4,139)</span></label
+              >
+            </div>
+            <div class="filter-option">
+              <input type="checkbox" id="cs" />
+              <label for="cs"
+                >Computer Science <span class="count">(3,414)</span></label
+              >
+            </div>
+            <div class="filter-option">
+              <input type="checkbox" id="it" />
+              <label for="it"
+                >Information Technology
+                <span class="count">(2,604)</span></label
+              >
+            </div>
+            <div class="filter-option">
+              <input type="checkbox" id="ds" />
+              <label for="ds"
+                >Data Science <span class="count">(1,906)</span></label
+              >
+            </div>
+            <span class="show-more">Show more</span>
+          </div>
+
+          <!-- Language Filter -->
+          <div class="filter-group">
+            <h3>
+              Language
+              <span class="info-icon" title="Select the course language"
+                >ℹ️</span
+              >
+            </h3>
+            <div class="filter-option">
+              <input type="checkbox" id="english" />
+              <label for="english"
+                >English <span class="count">(12,601)</span></label
+              >
+            </div>
+            <div class="filter-option">
+              <input type="checkbox" id="spanish" />
+              <label for="spanish"
+                >Spanish <span class="count">(6,537)</span></label
+              >
+            </div>
+            <div class="filter-option">
+              <input type="checkbox" id="french" />
+              <label for="french"
+                >French <span class="count">(5,503)</span></label
+              >
+            </div>
+            <div class="filter-option">
+              <input type="checkbox" id="arabic" />
+              <label for="arabic"
+                >Arabic <span class="count">(5,432)</span></label
+              >
+            </div>
+            <span class="show-more">Show more</span>
+          </div>
+          <!--Level Filter -->
+          <div class="filter-group">
+            <h3>Level</h3>
+            <div class="filter-option">
+              <input type="checkbox" id="Beginner" />
+              <label for="Beginner"
+                >Beginner <span class="count">(8,910)</span></label
+              >
+            </div>
+            <div class="filter-option">
+              <input type="checkbox" id="Intermediate" />
+              <label for="Intermediate"
+                >Intermediate <span class="count">(5,290)</span></label
+              >
+            </div>
+            <div class="filter-option">
+              <input type="checkbox" id="Advanced" />
+              <label for="Advanced"
+                >Advanced <span class="count">(599)</span></label
+              >
+            </div>
+            <div class="filter-option">
+              <input type="checkbox" id="Arabic" />
+              <label for="Arabic"
+                >Arabic <span class="count">(5,432)</span></label
+              >
+            </div>
+            <span class="show-more">Show more</span>
+          </div>
+
+          <!--learning product-->
+          <div class="filter-group">
+            <h3>Learning Product</h3>
+            <div class="filter-option">
+              <input type="checkbox" id="Guided Projects" />
+              <label for="Guided Projects"
+                >Guided Projects <span class="count">(1,615)</span></label
+              >
+            </div>
+            <div class="filter-option">
+              <input type="checkbox" id="Courses" />
+              <label for="Courses"
+                >Courses<span class="count">(12,323)</span></label
+              >
+            </div>
+            <div class="filter-option">
+              <input type="checkbox" id="Projects" />
+              <label for="Projects"
+                >Projects <span class="count">(576)</span></label
+              >
+            </div>
+            <div class="filter-option">
+              <input type="checkbox" id="Specializations" />
+              <label for="Specializations"
+                >Specializations <span class="count">(1,561)</span></label
+              >
+            </div>
+            <!-- <span class="show-more">Show more</span> -->
+            <div class="filter-option">
+              <input type="checkbox" id="Professional Certificates" />
+              <label for="Professional Certificates"
+                >Professional Certificates
+                <span class="count">(211)</span></label
+              >
+            </div>
+
+            <div class="filter-option">
+              <input type="checkbox" id="MasterTrack® Certificates" />
+              <label for="MasterTrack® Certificates"
+                >MasterTrack® Certificates
+                <span class="count">(13)</span></label
+              >
+            </div>
+
+            <div class="filter-option">
+              <input type="checkbox" id="Degrees" />
+              <label for="Degrees"
+                >Degrees <span class="count">(55)</span></label
+              >
+            </div>
+
+            <div class="filter-option">
+              <input type="checkbox" id="Postgraduate Diploma" />
+              <label for="Postgraduate Diploma"
+                >Postgraduate Diploma <span class="count">(1)</span></label
+              >
+            </div>
+
+            <div class="filter-option">
+              <input type="checkbox" id="Graduate Certificates" />
+              <label for="Graduate Certificates"
+                >Graduate Certificates <span class="count">(20)</span></label
+              >
+            </div>
+
+            <div class="filter-option">
+              <input type="checkbox" id="University Certificates" />
+              <label for="University Certificates"
+                >University Certificates <span class="count">(5)</span></label
+              >
+            </div>
+          </div>
+
+          <!--Duration -->
+          <div class="filter-group">
+            <h3>Duration</h3>
+            <div class="filter-option">
+              <input type="checkbox" id="Less Than 2 Hours" />
+              <label for="Less Than 2 Hours"
+                >Less Than 2 Hours <span class="count">(2,191)</span></label
+              >
+            </div>
+            <div class="filter-option">
+              <input type="checkbox" id="1-4 Weeks" />
+              <label for="1-4 Weeks"
+                >1-4 Weeks <span class="count">(6,768)</span></label
+              >
+            </div>
+            <div class="filter-option">
+              <input type="checkbox" id="1-3 Months" />
+              <label for="1-3 Months"
+                >1-3 Months <span class="count">(5,808)</span></label
+              >
+            </div>
+            <div class="filter-option">
+              <input type="checkbox" id="3-6 Months" />
+              <label for="3-6 Months"
+                >3-6 Months <span class="count">(1,504)</span></label
+              >
+            </div>
+            <!-- <span class="show-more">Show more</span> -->
+
+            <div class="filter-option">
+              <input type="checkbox" id="6-12 Months" />
+              <label for="6-12 Months"
+                >6-12 Months <span class="count">(39)</span></label
+              >
+            </div>
+
+            <div class="filter-option">
+              <input type="checkbox" id="1-4 Years" />
+              <label for="1-4 Years"
+                >1-4 Years <span class="count">(55)</span></label
+              >
+            </div>
+          </div>
+
+          <!-- Skills -->
+
+          <div class="filter-group">
+            <h3>Skills</h3>
+            <div class="filter-option">
+              <input type="checkbox" id="Data Analysis" />
+              <label for="Data Analysis"
+                >Data Analysis <span class="count">(1,364)</span></label
+              >
+            </div>
+            <div class="filter-option">
+              <input type="checkbox" id="Google Cloud Platform" />
+              <label for="Google Cloud Platform"
+                >Google Cloud Platform <span class="count">(1,284)</span></label
+              >
+            </div>
+            <div class="filter-option">
+              <input type="checkbox" id="Generative AI" />
+              <label for="Generative AI"
+                >Generative AI <span class="count">(1,279)</span></label
+              >
+            </div>
+            <div class="filter-option">
+              <input type="checkbox" id="Artificial Intelligence" />
+              <label for="Artificial Intelligence"
+                >Artificial Intelligence
+                <span class="count">(1,117)</span></label
+              >
+            </div>
+            <span class="show-more">Show more</span>
+          </div>
+
+          <!-- Subtitles -->
+          <div class="filter-group">
+            <h3>Subtitles</h3>
+            <div class="filter-option">
+              <input type="checkbox" id="English" />
+              <label for="English"
+                >English <span class="count">(13,844)</span></label
+              >
+            </div>
+            <div class="filter-option">
+              <input type="checkbox" id="Spanish" />
+              <label for="Spanish"
+                >Spanish <span class="count">(7,106)</span></label
+              >
+            </div>
+            <div class="filter-option">
+              <input type="checkbox" id="French" />
+              <label for="French"
+                >French <span class="count">(6,063)</span></label
+              >
+            </div>
+            <div class="filter-option">
+              <input type="checkbox" id="Arabic" />
+              <label for="Arabic"
+                >Arabic <span class="count">(5,906)</span></label
+              >
+            </div>
+            <span class="show-more">Show more</span>
+          </div>
+
+          <!-- Educator -->
+          <div class="filter-group">
+            <h3>Educator</h3>
+            <div class="filter-option">
+              <input type="checkbox" id="Google Cloud" />
+              <label for="Google Cloud"
+                >Google Cloud <span class="count">(1,630)</span></label
+              >
+            </div>
+            <div class="filter-option">
+              <input type="checkbox" id="Coursera Project Network" />
+              <label for="Coursera Project Network"
+                >Coursera Project Network
+                <span class="count">(1,608)</span></label
+              >
+            </div>
+            <div class="filter-option">
+              <input type="checkbox" id="Packt" />
+              <label for="Packt">Packt <span class="count">(904)</span></label>
+            </div>
+            <div class="filter-option">
+              <input type="checkbox" id="University of Colorado Boulder" />
+              <label for="University of Colorado Boulder"
+                >University of Colorado Boulder
+                <span class="count">(509)</span></label
+              >
+            </div>
+            <span class="show-more">Show more</span>
+          </div>
+        </div>
+
+         <div class="mobile-filter-section active">
           <!-- Subject Filter -->
           <div class="filter-group">
             <h3>Subject</h3>
@@ -692,15 +998,7 @@
         </div>
       </div> -->
     </footer>
-
-    <!-- 
-  <script>
-    const hamburger = document.getElementById('hamburger');
-    const navLinks = document.getElementById('nav-links');
-
-    hamburger.addEventListener('click', () => {
-      navLinks.classList.toggle('show');
-    });
-  </script> -->
+    <script src="cousera.js"></script>
+   
   </body>
 </html>

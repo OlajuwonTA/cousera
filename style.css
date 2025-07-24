@@ -332,7 +332,9 @@ section {
   margin-right: 10px;
   cursor: pointer;
 }
-
+.mobile-filter-section {
+  display: none;
+}
 /* RESPONSIVE */
 @media (max-width: 800px) {
   .nav-links {
@@ -382,4 +384,36 @@ section {
   .fil {
     display: none;
   }
+  .mobile-filter-section {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    width: 80%;
+    height: 350vh;
+    background-color: rgba(60, 200, 200, 1.8);
+    padding: 20px;
+    z-index: 1000;
+    border-radius: 10px;
+
+  }
+  .active {
+    display: none;
+  }
+  /* .mobile-filter-section.active {
+    display: flex;
+  }
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  .filter-group h3 {
+    font-size: 18px;
+  }
+  .filter-option label {
+    font-size: 16px;
+  } */
 }
